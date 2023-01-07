@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahona Jannat's Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box; font-family: Arial;}
+        body{
+            background: rgb(131,58,180);
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+            min-height: 100vh;
+        }
+        .container{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .box{
+            width: 30%;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 4%;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            z-index: -1;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+        .box .profile_pic{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 10px auto;
+            display: block;
+            position: relative;
+            border: 5px solid #ddd;
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+        .box h1{
+            text-align: center;
+            color: #fff;
+            font-family: 'Bakbak One', cursive;
+            font-size: 30px;
+            color: #f5f5f5;
+            text-shadow: 1px 1px 1px #919191,
+                1px 2px 1px #919191,
+                1px 3px 1px #919191,
+                1px 4px 1px #919191,
+                1px 5px 1px #919191,
+                1px 14px 6px rgba(16,16,16,0.4),
+                1px 16px 10px rgba(16,16,16,0.2),
+                1px 18px 35px rgba(16,16,16,0.2),
+                1px 20px 60px rgba(16,16,16,0.4);
+        }
+        .box h2{
+            margin: 10px 0px 20px 0px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        .box p{
+            margin: 20px 0px;
+            font-size: 14px;
+        }
+        .btn_wrapper{
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .btn{
+            display: inline-block;
+            margin: 0 auto;
+            text-decoration: none;
+        }
+        .button-29 {
+            align-items: center;
+            appearance: none;
+            background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+            border: 0;
+            border-radius: 6px;
+            box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+            box-sizing: border-box;
+            cursor: pointer;
+            display: inline-block;
+            color: #fff;
+            margin: 0 auto;
+            height: 48px;
+            justify-content: center;
+            line-height: 1;
+            list-style: none;
+            overflow: hidden;
+            padding-left: 16px;
+            padding-right: 16px;
+            position: relative;
+            text-align: center;
+            transition: box-shadow .15s,transform .15s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            will-change: box-shadow,transform;
+            font-size: 18px;
+        }
+        .button-29:focus {
+            box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        }
+
+        .button-29:hover {
+            box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+            transform: translateY(-2px);
+            background-image: radial-gradient(100% 140% at 70% 0, #5adaff 0, #5468ff 100%);
+        }
+        .button-29:active {
+            box-shadow: #3c4fe0 0 3px 7px inset;
+            transform: translateY(2px);
+        }
+        @media (max-width: 450px) {
+        .container{
+            display: block;
+            padding: 0;
+            height: 0;
+            top: 0;
+        } 
+        .box{
+            width: 80%;
+            margin: 30px auto;
+        }   
+        }
+        @media (min-width: 451px) and (max-width: 768px) {
+        .container{
+            display: block;
+            padding: 5px;
+            height: 0;
+            top: 0;
+        } 
+        .box{
+            width: 80%;
+            margin: 30px auto;
+        }
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+        .container{
+            display: block;
+            padding: 0;
+            height: 0;
+            top: 0;
+        } 
+        .box{
+            display: inline-block;
+            width: 40%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left box">
+            <img src="https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-1/319544338_3373786902888940_1812834270411477117_n.jpg?stp=c0.0.160.160a_dst-jpg_p160x160&_nc_cat=110&ccb=1-7&_nc_sid=7206a8&_nc_ohc=PFCl3A_NROcAX9FFzAy&_nc_ht=scontent.fdac138-1.fna&oh=00_AfBkmZt3Kt1G8C-j8mQSfFBS6jdgK62XxppfsW7Nm96o4w&oe=63BE7271" alt="Ahona Jannat Profile Pic" class="profile_pic">
+            <h1>Ahona Jannat</h1>
+            <h2>My Duties</h2>
+            <p>১) খুব সকালে ঘুম থেকে উঠা</p>
+            <p>২) ফ্রেশ হয়ে বই নিয়ে পড়া</p>
+            <p>৩) সকাল ১০টায় ভাত খাওয়া</p>
+            <p>৪) রাত ১০টা পর্যন্ত একভাবে পড়া</p>
+            <p>৫) মাঝে মধ্যে একটু টাইম পাস করা</p>
+            <div class="btn_wrapper">
+                <a href="https://www.facebook.com/profile.php?id=100058552324719" target="_blank" class="btn">
+                    <button class="button-29" role="button">My Facebook</button>
+                </a>
+            </div>
+        </div>               
+    </div>
+</body>
+</html>
